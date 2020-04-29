@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #F5F6F6;
+
+@include smartphone{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+ @include pc{
+     color: blue;
+     padding-left: 80px;
+     padding-right: 80px;
+  
+}
+}
