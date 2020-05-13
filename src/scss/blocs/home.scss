@@ -1,0 +1,34 @@
+.container{
+    background-color: $primary;
+    height: 100vh;
+}
+    .home{
+       
+        background: image('/src/assets/img/cc.png');
+        background-size: 250%;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 50vh;
+        &--about{
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+         
+            
+        & h2{
+            padding-top: 2%;
+            margin-bottom: 4%;
+        }
+        & p{
+            width: 40%;
+        }
+        & hr{
+            width: 50%;
+            
+        }
+    }
+
+}

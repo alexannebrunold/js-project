@@ -6,13 +6,14 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: #F5F6F6;
+    font-family: 'RalewayMedium', sans-serif;
 
 @include smartphone{
     padding-left: 16px;
     padding-right: 16px;
 }
  @include pc{
-     color: blue;
+     color: $black;
      padding-left: 80px;
      padding-right: 80px;
   
