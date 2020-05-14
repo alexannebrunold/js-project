@@ -3,10 +3,11 @@
 // txt.className = 'title';
 // txt.textContent = 'Hello World';
 // a.appendChild(txt)
-// const image1 = require('../assets/img/right-arrow.svg');
+
 
 document.addEventListener("DOMContentLoaded", function(){
-	
+	const image1 = require('../assets/img/cc.png');
+	const image2 = require('../assets/img/img1.svg');
 	class Model {
 		
 		constructor() {
@@ -16,17 +17,39 @@ document.addEventListener("DOMContentLoaded", function(){
 					url: '#',
 					background: '',
 					content: `
-									
-					<div class="home">
-						
+				<div class="home">	
+					<div class="home__div">
+						<h1 class="home__div--title">Bonjour</h1>	
+						<img src='${image1}'class="home__div-img"/>
 					</div>
 					<div class="home--about">
-					<h2>Who we are</h2>
-					<p>Et hanc quidem praeter oppida multa duae civitates exornant Seleucia opus Seleuci regis, et Claudiopolis quam deduxit coloniam Claudius Caesar. Isaura enim antehac nimium potens, olim subversa ut rebellatrix interneciva aegre vestigia claritudinis pristinae monstrat admodum pauca.</p>
-					<button href="#test">Read our story</button>
-					<hr>
+						<h2>Who we are</h2>
+						<p>Et hanc quidem praeter oppida multa duae civitates exornant Seleucia opus Seleuci regis, et Claudiopolis quam deduxit coloniam Claudius Caesar. Isaura enim antehac nimium potens, olim subversa ut rebellatrix interneciva aegre vestigia claritudinis pristinae monstrat admodum pauca.</p>
+						<button href="#test">Read our story</button>
+						<hr>
 					</div>
-
+					<div>
+					
+					<div class="home__products">
+						<div class="home--products--product">
+							<img src='${image2}'>
+							<h3>Premier produit</h3>
+							<p>le prixxx</p>
+						</div>
+						<div class="home--products--product">
+						<img src='${image2}'>
+							<h3>Deuxième produit</h3>
+							<p>le prixxx</p>
+						</div>
+						<div class="home--products--product">
+						<img src='${image2}'>
+							<h3>Troisième produit</h3>
+							<p>le prixxx</p>
+						</div>
+					</div>
+					<button>Click here</button>
+					</div>
+				
 					`,
 					dynamisme: () => {
 
@@ -39,9 +62,8 @@ document.addEventListener("DOMContentLoaded", function(){
 						h2.forEach(element => {
 							toUpper(element)
 						})
-
-					
 					}
+				
 				},
 				{
 					title: 'Contact',
